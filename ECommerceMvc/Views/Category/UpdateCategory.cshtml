@@ -1,0 +1,13 @@
+﻿@using ECommerceShared.Dtos
+@model CategoryDto
+
+<form method="post" asp-action="EditCategory" asp-route-categoryId="@Model.Id">
+    <div class="row"> 
+        <div class="form-outline">
+            <input type="text" asp-for="@Model.Name" placeholder="CategoryName" />
+        </div>
+        <div class="mt-4">
+            <button type="submit" class="btn btn-primary">Update</button>
+        </div>
+    </div>
+</form>
